@@ -24,8 +24,8 @@ Conditional DiT training in latent space (CYPM layout by default; CYNP / MTLS su
 
 import os as _os
 import sys as _sys
-_SUBDIT_ROOT = _os.path.dirname(_os.path.abspath(__file__))
-for _p in (_SUBDIT_ROOT, _os.path.join(_SUBDIT_ROOT, "core")):
+_PLOCDIT_ROOT = _os.path.dirname(_os.path.abspath(__file__))
+for _p in (_PLOCDIT_ROOT, _os.path.join(_PLOCDIT_ROOT, "core")):
     if _p not in _sys.path:
         _sys.path.insert(0, _p)
 
@@ -140,7 +140,7 @@ def _resolve_hpa_weight_arg(
 #################################################################################
 
 def _load_cypm_root():
-    default = os.environ.get("SUBDIT_DATA_ROOT", "")
+    default = os.environ.get("PLOCDIT_DATA_ROOT", "")
     yaml_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "config", "dataset_cypm.yaml")
     if os.path.exists(yaml_path):
         try:
@@ -3151,7 +3151,7 @@ if __name__ == "__main__":
         default="",
         help=(
             "Dataset root holding train/, val/, trainlabels_{tag}.h5, vallabels_{tag}.h5. "
-            "Empty means config/dataset_cypm.yaml or env var SUBDIT_DATA_ROOT. "
+            "Empty means config/dataset_cypm.yaml or env var PLOCDIT_DATA_ROOT. "
             "Example: --data-root /path/to/CYNP_ALL"
         ),
     )

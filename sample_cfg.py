@@ -28,8 +28,8 @@ Disable the frequency weighting (plain CFG):
 
 import os as _os
 import sys as _sys
-_SUBDIT_ROOT = _os.path.dirname(_os.path.abspath(__file__))
-for _p in (_SUBDIT_ROOT, _os.path.join(_SUBDIT_ROOT, "core")):
+_PLOCDIT_ROOT = _os.path.dirname(_os.path.abspath(__file__))
+for _p in (_PLOCDIT_ROOT, _os.path.join(_PLOCDIT_ROOT, "core")):
     if _p not in _sys.path:
         _sys.path.insert(0, _p)
 
