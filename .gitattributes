@@ -1,0 +1,22 @@
+# Auto detect text files and perform LF normalization
+* text=auto eol=lf
+
+# Source code (force LF)
+*.py   text eol=lf
+*.md   text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.txt  text eol=lf
+*.sh   text eol=lf
+*.cfg  text eol=lf
+*.ini  text eol=lf
+
+# Binary (don't touch)
+*.pth  binary
+*.pt   binary
+*.ckpt binary
+*.bin  binary
+*.png  binary
+*.jpg  binary
+*.gif  binary
+*.csv  binary

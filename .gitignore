@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Environments
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Backups created during refactors
+*.bak
+*.bak_*
+*.orig
+
+# Model weights and checkpoints
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+/pretrained/
+/models/
+
+# Training / evaluation artefacts and generated figures
+/results_*/
+/cfg_compare/
+/channel_verify_vis/
+/visuals/
+
+# Explicit large-weight fallbacks
+*.bin
+
+# Internal probe files created during repo refactor
+*.tmp
+_perm_test.tmp

@@ -1,0 +1,25 @@
+# Core runtime (install the CUDA build of torch that matches your driver)
+torch>=1.13
+torchvision
+numpy
+scipy
+h5py
+
+# Data / image IO
+opencv-python
+scikit-image
+pillow
+
+# Models
+timm
+diffusers
+accelerate
+transformers
+lpips
+
+# Evaluation / logging
+pytorch-fid
+matplotlib
+pandas
+omegaconf
+tqdm
